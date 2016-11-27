@@ -6,7 +6,9 @@ const Clapp = require('clapp');
 var app = new Clapp.App({
 	name: "DX Bot",
 	desc: "Dreaded_X Assistant",
-	prefix: "<@252218386791006209>",
+	// prefix: "<@252218386791006209>",
+	prefix: "!",
+	separator: "",
 	version: "1.0",
 	onReply: function(message, context) {
 		context.message.channel.sendMessage(message);
